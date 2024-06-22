@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
     <link rel="icon" href="Assets/Images/Reliance_Jio_Logo.svg.png">
     <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
-<body>
+
+<body cz-shortcut-listen="true" style="
+    background: #F1F5F9;
+">
     <header>
         <nav class="desktop-nav">
             <ul>
@@ -18,10 +22,13 @@
             </ul>
         </nav>
         <div class="mobile-nav">
-            <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
-            <img src="Assets/Images/Reliance_Jio_Logo.svg.png" alt="Jio" class="logo">
+            <button class="menu-btn" onclick="toggleMenu()" style="margin-left: 10px;">☰</button>
+            <img src="Assets/Images/Reliance_Jio_Logo.svg.png" alt="Jio" class="logo" style="margin-left: 10px;">
             <input type="text" placeholder="Search..." class="search-bar">
-            <img src="Assets/Images/profile.svg" alt="Profile Photo" class="profile-photo">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-white" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="margin-right: 20px;">
+                <path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z">
+                </path>
+            </svg>
         </div>
     </header>
 
@@ -29,69 +36,39 @@
     <img src="Assets/Images/jio_bg.png" alt="Jio" class="mobile-image" style="margin-top: 0px;">
 
     <main>
-        <section class="recharge-form">
-            <div class="heading-container">
-                <img src="Assets/Images/phone_ic.png" alt="Mobile Icon" class="mobile-icon">
-                <h1>Mobile Recharge</h1>
-            </div>
-            <form id="rechargeForm">
-                <label for="mobileNumber" style="margin-left: 10px;">Mobile Number:</label>
-                <input type="text" id="mobileNumber" name="mobileNumber" required="" style="width: 90%;">
-                <div class="offer-container" style="background: #EEEEEE; padding-left: 11px; padding-right: 10px; border-radius: 15px;">
-                    <img src="Assets/Images/offer-img.png" alt="Offer" class="offer-icon" style="width: 30px; height: 31px;">
-                    <h5 style="margin-right: 20px;">Recharge with a ₹149 plan for a month full of digital delights</h5>
-                </div>
-                
-                <button type="submit" style="margin-top: -10px;">Recharge</button>
-            </form>
-        </section>
-        <div class="bellow-qs">
-            <div class="offering-div">
-                <p>Our offering</p>
-                <img src="Assets/Images/add.svg" alt="Add Icon">
-            </div>
-            <div class="support-div">
-                <p>Support</p>
-                <img src="Assets/Images/add.svg" alt="Add Icon">
-            </div>
-            <div class="company-div">
-                <p>Our company</p>
-                <img src="Assets/Images/add.svg" alt="Add Icon">
-            </div>
-            <div class="links-div">
-                <p>Useful links</p>
-                <img src="Assets/Images/add.svg" alt="Add Icon">
-            </div>
-        </div>
-        
-    </main>
-    <div class="cs-ds">
-        <h3>Contact with us</h3>
-        <div class="social-icons">
-            <a href="#" class="social-icon"><img src="Assets/Images/twitter.png" alt="Twitter"></a>
-            <a href="#" class="social-icon"><img src="Assets/Images/instagram.png" alt="Instagram"></a>
-            <a href="#" class="social-icon"><img src="Assets/Images/facebook.png" alt="Facebook"></a>
-            <a href="#" class="social-icon"><img src="Assets/Images/facebook.png" alt="YouTube"></a>
-            <a href="#" class="social-icon"><img src="Assets/Images/linkedin.png" alt="LinkedIn"></a>
-        </div>
-    </div>
-    <div class="dj" style="margin-left: 20px;">
-        <h3>Download Jio App</h3>
-        <img src="Assets/Images/g-play.png" style="max-width: 150px;">
-        <img src="Assets/Images/app-play.png" style="max-width: 150px;">
-    </div>
-    <div class="bellow">
-        <img src="Assets/Images/Reliance_Jio_Logo.svg.png" style="width: 25px;height: 25px;margin-top: 20px;">
-    </div>
-    <p style="margin-right: 20px;margin-left: 20px;">Copyright © 2024 Reliance Jio Infocomm Ltd. All rights reserved</p>
-    <div class="links" style="margin-left: 20px;margin-right: 20px;">
-        <p>Press release.
-        </p><p>Regulatory</p>
-        <p>Policies</p>
-        <p>Terms &amp; conditions</p> 
-    </div>
-   
+        <section class="recharge-form" style="background: #F5F5F5;">
+           
 
-    <script src="Assets/JS/scripts.js"></script>
-</body>
+            <div class="bg-white border border-slate-200 rounded-2xl py-4 px-6">
+                <div class="text-[#0a2885] flex items-center text-[18px] font-bold w-fit mx-auto">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C11.4477 17 11 17.4477 11 18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17Z">
+                        </path>
+                    </svg>
+                    <span>Mobile Recharge</span>
+                </div>
+                <div class="mt-8">
+                    <label class="text-[14px] ml-2 font-semibold">Jio Mobile Number</label>
+                    <input type="number" id="mobileNumber" class="bg-white mt-1 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required="" autofocus value="">
+                </div>
+                <div class="bg-slate-100 flex items-center p-2 rounded-xl mt-5">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-yellow-500 mr-2" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m20.749 12 1.104-1.908a1 1 0 0 0-.365-1.366l-1.91-1.104v-2.2a1 1 0 0 0-1-1h-2.199l-1.103-1.909a1.008 1.008 0 0 0-.607-.466.993.993 0 0 0-.759.1L12 3.251l-1.91-1.105a1 1 0 0 0-1.366.366L7.62 4.422H5.421a1 1 0 0 0-1 1v2.199l-1.91 1.104a.998.998 0 0 0-.365 1.367L3.25 12l-1.104 1.908a1.004 1.004 0 0 0 .364 1.367l1.91 1.104v2.199a1 1 0 0 0 1 1h2.2l1.104 1.91a1.01 1.01 0 0 0 .866.5c.174 0 .347-.046.501-.135l1.908-1.104 1.91 1.104a1.001 1.001 0 0 0 1.366-.365l1.103-1.91h2.199a1 1 0 0 0 1-1v-2.199l1.91-1.104a1 1 0 0 0 .365-1.367L20.749 12zM9.499 6.99a1.5 1.5 0 1 1-.001 3.001 1.5 1.5 0 0 1 .001-3.001zm.3 9.6-1.6-1.199 6-8 1.6 1.199-6 8zm4.7.4a1.5 1.5 0 1 1 .001-3.001 1.5 1.5 0 0 1-.001 3.001z">
+                        </path>
+                    </svg>
+                    <p class="text-[12px] font-semibold">Recharge with a ₹149 plan for a month full of digital delights.
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <button type="submit" class="bg-[#0a2885] py-4 w-full text-[16px] rounded-full font-bold text-white">Recharge</button>
+                </div>
+            </div>
+        </section>
+        <img src="https://jio.indiawin.xyz/static/media/footer.153f35181d1adde12abf.png" alt="" class="w-full" style="width: 100%;margin-left: -20px;margin-right: -21px;/* padding-left: 3%; */">
+
+
+        <script src="Assets/JS/scripts.js"></script>
+
+</main></body>
+
 </html>
