@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #1E88E5;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.recharge-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.heading-container .mobile-icon {
+    margin-right: 10px;
+    width: 44px;
+    height: 51px;
+}
+
+.recharge-form h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.recharge-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.recharge-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.offer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.offer-container .offer-icon {
+    margin-right: 10px;
+}
+
+.recharge-form button {
+    background-color: #0f3cc9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px; /* Added border radius */
+    cursor: pointer;
+    width: 100px; /* Added fixed width */
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Ensure the button is treated as a block-level element */
+}
+
+.recharge-form button:hover {
+    background-color: #0d34a6;
+}
+
+footer {
+    background-color: #0f3cc9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    height: 25px;
+    margin-bottom: 20px;
+    width: 120%;
+}
+
+.bellow-qs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.offering-div,
+.support-div,
+.company-div,
+.links-div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.offering-div p,
+.support-div p,
+.company-div p,
+.links-div p {
+    margin-right: 10px;
+}
+
+.offering-div img,
+.support-div img,
+.company-div img,
+.links-div img {
+    width: 20px;
+    height: 20px;
+    margin-left: auto; /* Align image to the right */
+    margin-right: 30px; /* 30px margin from the right */
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin: 0 3px; /* Margin between icons */
+    background-color: #0f3cc9;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Basic styles for desktop navigation */
+.desktop-nav {
+    display: flex;
+}
+
+.mobile-nav {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav .menu-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-nav .logo {
+    height: 40px;
+}
+
+.mobile-nav .search-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #0f3cc9;
+    color: white;
+    padding: 8px;
+    border: none;
+}
+
+.mobile-nav .search-bar::placeholder {
+    color: white;
+}
+
+.mobile-nav .profile-photo {
+    height: 40px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+
+/* Mobile menu hidden by default */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Mobile image styles */
+.mobile-image {
+    display: none;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    main {
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    .recharge-form {
+        margin: 20px 20px 0;
+    }
+
+    .bellow-qs {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .offering-div,
+    .support-div,
+    .company-div,
+    .links-div {
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }  
+    
+    /* CSS for Contact with us section */
+.cs-ds {
+    margin-left: 20px; /* Added left margin */
+    text-align: left; /* Align text to the left */
+}
+
+.cs-ds h3 {
+    margin-bottom: 10px; /* Adjust spacing between heading and social icons */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.social-icon {
+    margin-right: 10px; /* Margin between icons */
+}
+
+.social-icon:last-child {
+    margin-right: 0; /* Remove margin from last icon */
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensure icons are round */
+}
+
+/* CSS for links section */
+.links {
+    margin-top: 20px; /* Adjust as needed */
+    text-align: left; /* Align text to the left */
+}
+
+.links p {
+    display: inline-block; /* Ensure paragraphs are inline */
+    margin-right: 20px; /* Margin between paragraphs */
+    font-size: 10px;
+    margin-bottom: 20PX;
+    color: #0f3cc9; /* Text color */
+}
+
+/* CSS for bellow section */
+.bellow {
+    margin-left: 20px; /* Left margin */
+}
+
+.bellow img {
+    width: 30px;
+    height: 30px;
+}
+
+}
+/* CSS for Contact with us section */
+.cs-ds {
+    margin-left: 20px; /* Added left margin */
+    text-align: left; /* Align text to the left */
+}
+
+.cs-ds h3 {
+    margin-bottom: 10px; /* Adjust spacing between heading and social icons */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.social-icon {
+    margin-right: 10px; /* Margin between icons */
+}
+
+.social-icon:last-child {
+    margin-right: 0; /* Remove margin from last icon */
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensure icons are round */
+}
