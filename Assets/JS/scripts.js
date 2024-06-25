@@ -30,7 +30,7 @@ rechargeButton.addEventListener('click', (e) => {
   } else {
     localStorage.setItem('mobileNumber', mobileNumber);
     // Redirect to recharge.html
-    window.location.href = 'recharge.html';
+    window.location.href = 'recharge-offer.html';
   }
 });
 document.addEventListener("DOMContentLoaded", () => {
