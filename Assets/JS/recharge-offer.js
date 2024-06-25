@@ -42,7 +42,7 @@ const couponErrorDiv = document.getElementById('couponError');
 applyCouponButton.addEventListener('click', (e) => {
     e.preventDefault();
     const couponCode = couponCodeInput.value.trim();
-    if (couponCode === 'JIO80OFF') {
+    if (couponCode === 'JIOLOOT') {
         window.location.href = 'recharge.html';
     } else {
         couponErrorDiv.innerText = 'Invalid coupon code';

